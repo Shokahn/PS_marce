@@ -6,7 +6,7 @@
 #    By: shokahn <shokahn@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/13 00:48:48 by mnirska           #+#    #+#              #
-#    Updated: 2025/05/14 01:13:20 by shokahn          ###   ########.fr        #
+#    Updated: 2025/05/14 01:31:19 by shokahn          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 $(NAME): $(LIBFT) $(PRINTF) $(OBJ)
 	@echo ""
 	@echo "		🚀 $(BOLD)$(YELLOW)Linking $(NAME)...$(RESET)"
-	@cc $(CFLAGS) $(OBJ) -o $(NAME) -I $(INCLUDE) $(LIBFT) $(EXTRAFLAGS)
+	@cc $(CFLAGS) $(OBJ) -o $(NAME) -I $(INCLUDE) $(LIBFT)
 	@echo ""
 	@echo "	🎉 $(BOLD)$(GREEN)SUCCESS: $(NAME) has been created$(RESET) ✅ "
 	@echo ""
